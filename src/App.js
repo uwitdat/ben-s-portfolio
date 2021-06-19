@@ -145,10 +145,36 @@ const App = () => {
 
       <div className="container-six">
         <h1 className="title" id="black">ABOUT</h1>
+        <div className="flex-mega">
+          <div className="flex-par">
+            <img id="me" src="IMG_9861 2.jpeg"></img>
+          </div>
+
+        </div>
       </div>
 
       <div className="container-sev">
-        <h1 className="title" id="black">CONTACT</h1>
+        <h1 className="title" id="black">CONTACT ME</h1>
+
+        <div className="flx-row">
+
+          <div className="flx-txt">
+            <p id="top">Based in</p>
+            <p className="pink" id="top-bold">benshekhtman</p>
+          </div>
+
+          <div className="flx-txt-two">
+            <p id="top">Toronto, on</p>
+            <p className="pink" id="top-bold">@hotmail.com</p>
+          </div>
+
+        </div>
+
+        <div className="links">
+          <AiFillLinkedin id='link' />
+          <AiFillFacebook id='link' />
+          <DiGithubBadge id='link' />
+        </div>
       </div>
 
 
