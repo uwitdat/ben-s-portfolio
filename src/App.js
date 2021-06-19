@@ -2,22 +2,31 @@ import React, { useState } from 'react';
 import { SliderData } from './SliderData'
 import { SliderDataTwo } from './SliderData'
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa'
+import { DiGithubBadge, DiHeroku } from 'react-icons/di'
+import { AiFillLinkedin, AiFillFacebook } from 'react-icons/ai'
 import './App.css';
 
 const App = () => {
-  const length = SliderData.length
-  const lengthTwo = SliderDataTwo.length
+  const length = SliderData.length;
+  const lengthTwo = SliderDataTwo.length;
 
-  const [current, setCurrent] = useState(0)
-  const [currentTwo, setCurrentTwo] = useState(0)
-
+  const [current, setCurrent] = useState(0);
+  const [currentTwo, setCurrentTwo] = useState(0);
 
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1)
-  }
+  };
 
   const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
+  };
+
+  const nextSlideTwo = () => {
+    setCurrentTwo(currentTwo === lengthTwo - 1 ? 0 : currentTwo + 1)
+  };
+
+  const prevSlideTwo = () => {
+    setCurrentTwo(currentTwo === 0 ? lengthTwo - 1 : currentTwo - 1);
   };
 
 
@@ -55,40 +64,57 @@ const App = () => {
             )
           })}
         </div>
-
         <div className="arrow">
           <FaArrowAltCircleLeft className='right-arr' onClick={prevSlide} />
           <FaArrowAltCircleRight className='right-arr' onClick={nextSlide} />
         </div>
+        <div className="links">
+          <a href='https://github.com/uwitdat/playdog-project3'
+            target='_blank'>
+            <DiGithubBadge
+              id='link' />
+          </a>
+          <a href='https://playdog-playdate.herokuapp.com'
+            target='_blank'>
+            <DiHeroku
+              id='link' />
+          </a>
+        </div>
       </div>
-
-
-
-
       <div className="container-three">
-        <div className="content">
-          <p id='lan'>// LANGUAGES</p>
-          <hr />
-          <p id="txt">JAVASCRIPT, PYTHON, RUBY</p>
-          <p id="txt"> HTML, CSS, SASS</p>
+        <h1 className="title" id="black">TRADE / ER</h1>
+        <div className='col-2-pics'>
+          {SliderDataTwo.map((slide, index) => {
+            return (
+              <div className={index === currentTwo ? 'slide active' : 'slide'}
+                key={index}
+              >
+                {index === currentTwo && (<img id='playdog' src={slide.image}></img>)}
+              </div>
+            )
+          })}
         </div>
-        <div className="content">
-          <p id='lan'>// FRAMEWORKS</p>
-          <hr />
-          <p id="txt">REACT, EXPRESS, NODE, DJANGO</p>
-          <p id="txt">RUBY ON RAILS, BOOTSTRAP, MATERIALIZE</p>
+        <div className="arrow">
+          <FaArrowAltCircleLeft className='right-arr' onClick={prevSlideTwo} />
+          <FaArrowAltCircleRight className='right-arr' onClick={nextSlideTwo} />
         </div>
-        <div className="content">
-          <p id='lan'>// DATABASES</p>
-          <hr />
-          <p id="txt">MONGODB, PSQL, SQLITE</p>
-        </div>
-        <div className="content">
-          <p id='lan'>// DEV-OPS</p>
-          <hr />
-          <p id="txt">GITHUB, AWS, HEROKU</p>
+        <div className="links">
+          <a href='https://github.com/uwitdat/trader-among-us'
+            target='_blank'>
+            <DiGithubBadge
+              id='link' />
+          </a>
+          <a href='https://trader-among-us.herokuapp.com/login'
+            target='_blank'>
+            <DiHeroku
+              id='link' />
+          </a>
         </div>
       </div>
+
+
+
+
 
 
 
