@@ -4,11 +4,18 @@ import { SliderDataTwo } from './SliderData'
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa'
 import { DiGithubBadge, DiHeroku } from 'react-icons/di'
 import { AiFillLinkedin, AiFillFacebook } from 'react-icons/ai'
+
+import Modal from './components/Modal'
 import './App.css';
 
 const App = () => {
   const length = SliderData.length;
   const lengthTwo = SliderDataTwo.length;
+
+  const [isOpen, setIsOpen] = useState(false)
+  const [isOpenTwo, setIsOpenTwo] = useState(false)
+  const [isOpenThree, setIsOpenThree] = useState(false)
+  const [isOpenFour, setIsOpenFour] = useState(false)
 
   const [current, setCurrent] = useState(0);
   const [currentTwo, setCurrentTwo] = useState(0);
@@ -141,16 +148,54 @@ const App = () => {
 
       <div className="container-five">
         <h1 className="title" id="black">RESUME</h1>
+
+        <div className="cerf-row">
+
+          <div
+            onClick={() => setIsOpen(true)}>
+            <img id="cerf" src="https://dzf8vqv24eqhg.cloudfront.net/userfiles/2086/3660/ckfinder/images/qu/Cert.jpg" />
+          </div>
+          <Modal open={isOpen} onClose={() => setIsOpen(!isOpen)}>
+            <img id="expanded" src="https://dzf8vqv24eqhg.cloudfront.net/userfiles/2086/3660/ckfinder/images/qu/Cert.jpg" />
+          </Modal>
+
+          <div
+            onClick={() => setIsOpenTwo(true)}>
+            <img id="cerf" src="https://marketplace.canva.com/EADaoY5X9lc/1/0/800w/canva-dark-blue-and-gold-bordered-recognition-certificate-cQSPpNR7kyI.jpg" />
+          </div>
+          <Modal openTwo={isOpenTwo} onClose={() => setIsOpenTwo(!isOpenTwo)}>
+            <img id="expanded" src="https://marketplace.canva.com/EADaoY5X9lc/1/0/800w/canva-dark-blue-and-gold-bordered-recognition-certificate-cQSPpNR7kyI.jpg" />
+          </Modal>
+
+          <div
+            onClick={() => setIsOpenThree(true)}>
+            <img id="cerf" src="https://i.pinimg.com/originals/86/a8/42/86a8426e58d625feb3d2e4f54468639d.jpg" />
+          </div>
+          <Modal openThree={isOpenThree} onClose={() => setIsOpenThree(!isOpenThree)}>
+            <img id="expanded" src="https://i.pinimg.com/originals/86/a8/42/86a8426e58d625feb3d2e4f54468639d.jpg" />
+          </Modal>
+
+          <div
+            onClick={() => setIsOpenFour(true)}>
+            <img id="cerf" src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/blue-certificate-template-d7da5489aa80ee1dcfdcabac6ba086fa_screen.jpg?ts=1619510148https://d1csarkz8obe9u.cloudfront.net/posterpreviews/blue-certificate-template-d7da5489aa80ee1dcfdcabac6ba086fa_screen.jpg?ts=1619510148" />
+          </div>
+          <Modal openFour={isOpenFour} onClose={() => setIsOpenFour(!isOpenFour)}>
+            <img id="expanded" src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/blue-certificate-template-d7da5489aa80ee1dcfdcabac6ba086fa_screen.jpg?ts=1619510148" />
+          </Modal>
+
+
+        </div>
+
+
+
+
+
+
       </div>
 
       <div className="container-six">
         <h1 className="title" id="black">ABOUT</h1>
-        <div className="flex-mega">
-          <div className="flex-par">
-            <img id="me" src="IMG_9861 2.jpeg"></img>
-          </div>
 
-        </div>
       </div>
 
       <div className="container-sev">
