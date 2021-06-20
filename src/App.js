@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { SliderData } from './SliderData'
 import { SliderDataTwo } from './SliderData'
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa'
+import { FaArrowAltCircleRight, FaArrowAltCircleLeft, FaDownload } from 'react-icons/fa'
 import { DiGithubBadge, DiHeroku } from 'react-icons/di'
 import { AiFillLinkedin, AiFillFacebook } from 'react-icons/ai'
 
@@ -185,14 +185,22 @@ const App = () => {
         </div>
 
 
-
-
+        <div className="resume-col">
+          <p id="top">Download My <span id="pink">Resume</span></p>
+          <a href="resume.png" download="resume.png">
+            <FaDownload id="resume" />
+          </a>
+        </div>
 
 
       </div>
 
       <div className="container-sev">
         <h1 className="title" id="black">ABOUT</h1>
+        <div id="about">
+          <p>My languages and frameworks include:</p>
+
+        </div>
         <div id="about">
           <p>JavaScript</p>
           <p>React</p>

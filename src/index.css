@@ -488,18 +488,35 @@ a {
   font-family: "Fugaz One", cursive;
   text-transform: uppercase;
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 #about-two > p {
   color: rgb(255, 151, 167);
   font-family: "Fugaz One", cursive;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   margin: 0;
 }
 
 #red {
   color: rgb(192, 16, 16);
+}
+
+.resume-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#resume {
+  font-size: 2rem;
+  color: rgb(255, 151, 167);
+  transition: 300ms;
+}
+
+#resume:hover {
+  transform: scale(1.1);
+  color: rgb(250, 170, 182);
 }
 
 #sven {
