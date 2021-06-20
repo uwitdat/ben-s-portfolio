@@ -182,8 +182,6 @@ const App = () => {
           <Modal openFour={isOpenFour} onClose={() => setIsOpenFour(!isOpenFour)}>
             <img id="expanded" src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/blue-certificate-template-d7da5489aa80ee1dcfdcabac6ba086fa_screen.jpg?ts=1619510148" />
           </Modal>
-
-
         </div>
 
 
@@ -193,9 +191,29 @@ const App = () => {
 
       </div>
 
-      <div className="container-six">
+      <div className="container-sev">
         <h1 className="title" id="black">ABOUT</h1>
+        <div id="about">
+          <p>JavaScript</p>
+          <p>React</p>
+          <p>Python</p>
+          <p>Django</p>
+          <p>Ruby on Rails</p>
+        </div>
+        <div id="about-two">
+          <p>MongoDB</p>
+          <p>Express</p>
+          <p>NodeJS</p>
+          <p>GitHub</p>
+          <p>AWS</p>
+        </div>
 
+        <div id="about">
+          <p>CSS</p>
+          <p>Materialize</p>
+          <p>Bootstrap</p>
+          <p>Semantic UI</p>
+        </div>
       </div>
 
       <div className="container-sev">

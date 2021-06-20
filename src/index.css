@@ -465,8 +465,49 @@ a {
 #expanded {
   width: 90vw;
   height: auto;
+  object-fit: contain;
 }
 
+#about {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+#about-two {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+#about > p {
+  font-family: "Fugaz One", cursive;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 1.5rem;
+}
+#about-two > p {
+  color: rgb(255, 151, 167);
+  font-family: "Fugaz One", cursive;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+#red {
+  color: rgb(192, 16, 16);
+}
+
+#sven {
+  height: auto;
+  width: 12rem;
+  object-fit: cover;
+  border-radius: 25%;
+}
 @media only screen and (max-width: 360px) {
   .arrow {
     display: flex;
