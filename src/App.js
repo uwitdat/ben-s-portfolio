@@ -218,6 +218,7 @@ const App = () => {
 
         <div id="about">
           <p>CSS</p>
+          <p>SASS</p>
           <p>Materialize</p>
           <p>Bootstrap</p>
           <p>Semantic UI</p>

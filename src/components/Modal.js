@@ -11,6 +11,7 @@ const OVERLAYS = {
     right: 0,
     bottom: 0,
     backgroundColor: 'rgba(0, 0, 0, .6)',
+    backdropFilter: 'blur(5px)',
     zIndex: 1000
 
 }
