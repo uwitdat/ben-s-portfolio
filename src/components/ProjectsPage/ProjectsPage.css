@@ -1,0 +1,71 @@
+.container-two {
+  background-color: rgb(0, 0, 0);
+  height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #000000 44%,
+    rgba(255, 151, 167, 0.822) 44%,
+    rgb(255, 151, 166) 50%,
+    #000000 40%
+  );
+
+  /* Start #5cbcb0 from 0 and end at 5%, Start #fff at 5% and end at 15%, Start #5cbcb0 again at 15% and end at 100% */
+
+  background-repeat: no-repeat; /* To avoid multiple instances */
+}
+
+.container-three {
+  height: 100vh;
+  background-color: black;
+  background: linear-gradient(
+    135deg,
+    #272727 44%,
+    rgba(255, 151, 167, 0.801) 34%,
+    rgb(255, 151, 167) 50%,
+    #000000 40%
+  );
+}
+
+#playdog {
+  height: 30rem;
+  width: auto;
+  user-select: none;
+}
+
+.col-2-pics {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid white; */
+  height: 70%;
+  margin-top: 0.5rem;
+}
+
+.right-arr {
+  color: rgb(231, 231, 231);
+  font-size: 2.4rem;
+  margin: 0 1rem;
+  transition: 300ms;
+}
+
+.right-arr:hover {
+  transform: scale(1.1);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+}

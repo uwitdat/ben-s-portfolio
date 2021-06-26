@@ -1,8 +1,7 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 import { IoMdClose } from 'react-icons/io'
-
-
+import './Modal.css'
 
 const OVERLAYS = {
     position: 'fixed',

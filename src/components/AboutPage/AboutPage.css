@@ -1,0 +1,33 @@
+#about {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+#about-two {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+#about > p {
+  font-family: "Fugaz One", cursive;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 1.2rem;
+}
+#about-two > p {
+  color: rgb(255, 151, 167);
+  font-family: "Fugaz One", cursive;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+#red {
+  color: rgb(192, 16, 16);
+}

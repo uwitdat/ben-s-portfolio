@@ -1,0 +1,55 @@
+.container-sev {
+  height: 100vh;
+
+  background: linear-gradient(
+    135deg,
+    #000000 44%,
+    rgb(158, 20, 20) 34%,
+    rgba(158, 20, 20) 50%,
+    #000000 40%
+  );
+}
+
+.flx-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 70vh;
+  width: 50%;
+  padding-top: 20vh;
+  padding-left: 5vw;
+}
+
+.flx-txt-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 70vh;
+  width: 50%;
+  padding-bottom: 17vh;
+  padding-right: 5vw;
+}
+
+#top-shadow {
+  text-transform: uppercase;
+  font-family: "Fugaz One", cursive;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+#top-shadow-two {
+  text-transform: uppercase;
+  font-family: "Fugaz One", cursive;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.more {
+  padding-left: 3vw;
+}
+
+.more-two {
+  padding-right: 3vw;
+}
