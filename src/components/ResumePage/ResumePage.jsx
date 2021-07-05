@@ -24,18 +24,18 @@ const ResumePage = ({ setIsOpen, isOpen,
 
         <div
           onClick={() => setIsOpenTwo(true)}>
-          <img id="cerf" src="grades2.png" />
+          <img id="cerf" src="udemy-css.png" />
         </div>
         <Modal openTwo={isOpenTwo} onClose={() => setIsOpenTwo(!isOpenTwo)}>
-          <img id="expanded" src="grades2.png" />
+          <img id="expanded" src="udemy-css.png" />
         </Modal>
 
         <div
           onClick={() => setIsOpenThree(true)}>
-          <img id="cerf" src="https://i.pinimg.com/originals/86/a8/42/86a8426e58d625feb3d2e4f54468639d.jpg" />
+          <img id="cerf" src="udemy-javascript.png" />
         </div>
         <Modal openThree={isOpenThree} onClose={() => setIsOpenThree(!isOpenThree)}>
-          <img id="expanded" src="https://i.pinimg.com/originals/86/a8/42/86a8426e58d625feb3d2e4f54468639d.jpg" />
+          <img id="expanded" src="udemy-javascript.png" />
         </Modal>
 
         <div
