@@ -23,6 +23,7 @@ const App = () => {
   const [isOpenTwo, setIsOpenTwo] = useState(false)
   const [isOpenThree, setIsOpenThree] = useState(false)
   const [isOpenFour, setIsOpenFour] = useState(false)
+  const [isOpenFive, setIsOpenFive] = useState(false)
 
   const [current, setCurrent] = useState(0);
   const [currentTwo, setCurrentTwo] = useState(0);
@@ -72,6 +73,8 @@ const App = () => {
         isOpenThree={isOpenThree}
         setIsOpenFour={setIsOpenFour}
         isOpenFour={isOpenFour}
+        setIsOpenFive={setIsOpenFive}
+        isOpenFive={isOpenFive}
       />
 
       <AboutPage />

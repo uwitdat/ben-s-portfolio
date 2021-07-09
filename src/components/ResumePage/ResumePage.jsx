@@ -2,16 +2,26 @@ import './ResumePage.css';
 import { FaDownload } from 'react-icons/fa'
 import Modal from '../Modal/Modal'
 
-const ResumePage = ({ setIsOpen, isOpen,
+const ResumePage = ({
+  setIsOpen, isOpen,
   setIsOpenTwo, isOpenTwo,
   setIsOpenThree, isOpenThree,
-  setIsOpenFour, isOpenFour
+  setIsOpenFour, isOpenFour,
+  setIsOpenFive, isOpenFive,
 }) => {
 
 
   return (
     <div className="container-five">
+
       <h1 className="title" id="black">RESUME</h1>
+
+      <div className="resume-col">
+        <p id="top">Download My Resume</p>
+        <a href="resume.png" download="resume.png">
+          <FaDownload id="resume" />
+        </a>
+      </div>
 
       <div className="cerf-row">
         <div
@@ -24,10 +34,10 @@ const ResumePage = ({ setIsOpen, isOpen,
 
         <div
           onClick={() => setIsOpenTwo(true)}>
-          <img id="cerf" src="udemy-css.png" />
+          <img id="cerf" src="ga-grades.png" />
         </div>
         <Modal openTwo={isOpenTwo} onClose={() => setIsOpenTwo(!isOpenTwo)}>
-          <img id="expanded" src="udemy-css.png" />
+          <img id="expanded" src="ga-grades.png" />
         </Modal>
 
         <div
@@ -40,18 +50,22 @@ const ResumePage = ({ setIsOpen, isOpen,
 
         <div
           onClick={() => setIsOpenFour(true)}>
-          <img id="cerf" src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/blue-certificate-template-d7da5489aa80ee1dcfdcabac6ba086fa_screen.jpg?ts=1619510148https://d1csarkz8obe9u.cloudfront.net/posterpreviews/blue-certificate-template-d7da5489aa80ee1dcfdcabac6ba086fa_screen.jpg?ts=1619510148" />
+          <img id="cerf" src="udemy-react.png" />
         </div>
         <Modal openFour={isOpenFour} onClose={() => setIsOpenFour(!isOpenFour)}>
-          <img id="expanded" src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/blue-certificate-template-d7da5489aa80ee1dcfdcabac6ba086fa_screen.jpg?ts=1619510148" />
+          <img id="expanded" src="udemy-react.png" />
         </Modal>
-      </div>
 
-      <div className="resume-col">
-        <p id="top">Download My <span id="pink">Resume</span></p>
-        <a href="resume.png" download="resume.png">
-          <FaDownload id="resume" />
-        </a>
+
+        <div
+          onClick={() => setIsOpenFive(true)}>
+          <img id="cerf" src="udemy-css.png" />
+        </div>
+        <Modal openFive={isOpenFive} onClose={() => setIsOpenFive(!isOpenFive)}>
+          <img id="expanded" src="udemy-css.png" />
+        </Modal>
+
+
       </div>
     </div>
   )
