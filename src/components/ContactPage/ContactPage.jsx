@@ -20,7 +20,7 @@ const ContactPage = () => {
       </div>
 
       <div className="links">
-        <a href='https://github.com/uwitdat'
+        <a href='https://www.linkedin.com/in/ben-shekhtman-751475178/'
           target='_blank'>
           <AiFillLinkedin id='link'
           />
@@ -29,7 +29,7 @@ const ContactPage = () => {
           target='_blank'>
           <AiFillFacebook id='link' />
         </a>
-        <a href='https://www.linkedin.com/in/ben-shekhtman-751475178/'
+        <a href='https://www.github.com/uwitdat/'
           target='_blank'>
           <DiGithubBadge id='link' />
         </a>

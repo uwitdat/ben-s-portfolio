@@ -8,6 +8,11 @@
     rgba(158, 20, 20) 50%,
     #000000 40%
   );
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .flx-txt {

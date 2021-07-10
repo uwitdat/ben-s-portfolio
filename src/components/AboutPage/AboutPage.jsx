@@ -28,7 +28,7 @@ const AboutPage = () => {
         <p>SASS</p>
         <p>Materialize</p>
         <p>Bootstrap</p>
-        <p>Semantic UI</p>
+
       </div>
     </div>
   )

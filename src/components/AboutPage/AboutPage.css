@@ -28,15 +28,33 @@
   margin: 0;
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 500px) {
   #about > p {
     font-size: 1.2rem;
   }
 }
 
+@media only screen and (min-width: 501px) {
+  #about > p {
+    font-size: 1.6rem;
+  }
+}
+
 @media only screen and (min-width: 1000px) {
   #about > p {
-    font-size: 2rem;
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #about-two > p {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 501px) {
+  #about-two > p {
+    font-size: 1.6rem;
   }
 }
 
