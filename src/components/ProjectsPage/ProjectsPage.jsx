@@ -45,7 +45,7 @@ const ProjectsPage = ({ nextSlide,
         </div>
       </div>
       <div className="container-three">
-        <h1 className="title" id="black">TRADE / ER</h1>
+        <h1 className="title margin-less" id="black">TRADE / ER</h1>
         <div className='col-2-pics'>
           {SliderDataTwo.map((slide, index) => {
             return (

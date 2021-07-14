@@ -18,7 +18,7 @@
 }
 
 .container-four {
-  height: 100vh;
+  height: auto;
   background-color: black;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .repos-container {
-  height: 80%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;

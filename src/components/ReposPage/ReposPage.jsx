@@ -7,23 +7,31 @@ const ReposPage = () => {
       <h1 className="title" id="black">MORE PROJECTS</h1>
       <div className="repos-container">
         <div className="repos">
-          <DiGithubBadge id='link' /><p>Gear-Guru</p>
+          <DiGithubBadge id='link' /><p>Express Gear-Guru</p>
         </div>
 
         <div className="repos">
-          <DiGithubBadge id='link' /><p>Finance Tracker</p>
+          <DiGithubBadge id='link' /><p>MERN TODOS </p>
         </div>
 
         <div className="repos">
-          <DiGithubBadge id='link' /><p>Guitar Blog</p>
+          <DiGithubBadge id='link' /><p>MERN live Chat </p>
         </div>
 
         <div className="repos">
-          <DiGithubBadge id='link' /><p>Message-Me app</p>
+          <DiGithubBadge id='link' /><p>Rails Finance Tracker</p>
         </div>
 
         <div className="repos">
-          <DiGithubBadge id='link' /><p>Pokemon collector</p>
+          <DiGithubBadge id='link' /><p>Rails Guitar Blog</p>
+        </div>
+
+        <div className="repos">
+          <DiGithubBadge id='link' /><p>Rails Messenger</p>
+        </div>
+
+        <div className="repos">
+          <DiGithubBadge id='link' /><p>Django Pokemon</p>
         </div>
       </div>
     </div>

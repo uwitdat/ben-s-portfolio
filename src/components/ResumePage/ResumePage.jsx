@@ -34,18 +34,18 @@ const ResumePage = ({
 
         <div
           onClick={() => setIsOpenTwo(true)}>
-          <img id="cerf" src="ga-grades.png" />
+          <img id="cerf" src="udemy-javascript.png" />
         </div>
         <Modal openTwo={isOpenTwo} onClose={() => setIsOpenTwo(!isOpenTwo)}>
-          <img id="expanded" src="ga-grades.png" />
+          <img id="expanded" src="udemy-javascript.png" />
         </Modal>
 
         <div
           onClick={() => setIsOpenThree(true)}>
-          <img id="cerf" src="udemy-javascript.png" />
+          <img id="cerf" src="udemy-css.png" />
         </div>
         <Modal openThree={isOpenThree} onClose={() => setIsOpenThree(!isOpenThree)}>
-          <img id="expanded" src="udemy-javascript.png" />
+          <img id="expanded" src="udemy-css.png" />
         </Modal>
 
         <div
@@ -59,10 +59,10 @@ const ResumePage = ({
 
         <div
           onClick={() => setIsOpenFive(true)}>
-          <img id="cerf" src="udemy-css.png" />
+          <img id="cerf" src="udemy-mern.png" />
         </div>
         <Modal openFive={isOpenFive} onClose={() => setIsOpenFive(!isOpenFive)}>
-          <img id="expanded" src="udemy-css.png" />
+          <img id="expanded" src="udemy-mern.png" />
         </Modal>
 
 
