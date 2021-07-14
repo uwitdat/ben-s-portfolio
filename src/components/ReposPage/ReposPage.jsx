@@ -6,17 +6,21 @@ const ReposPage = () => {
     <div className="container-four">
       <h1 className="title" id="black">MORE PROJECTS</h1>
       <div className="repos-container">
-        <div className="repos">
-          <DiGithubBadge id='link' /><p>Express Gear-Guru</p>
-        </div>
 
-        <div className="repos">
-          <DiGithubBadge id='link' /><p>MERN TODOS </p>
-        </div>
+        <a href='https://github.com/uwitdat/gear-guru-sell-and-buy'
+          target='_blank'><div className="repos">
+            <DiGithubBadge id='link' /><p>Express Gear-Guru</p>
+          </div></a>
 
-        <div className="repos">
-          <DiGithubBadge id='link' /><p>MERN live Chat </p>
-        </div>
+        <a href='https://github.com/uwitdat/mern-todos-react'
+          target='_blank'><div className="repos">
+            <DiGithubBadge id='link' /><p>MERN TODOS </p>
+          </div></a>
+
+        <a href='https://github.com/uwitdat/MERN-CHAT-CLIENT'
+          target='_blank'><div className="repos">
+            <DiGithubBadge id='link' /><p>MERN live Chat </p>
+          </div></a>
 
         <div className="repos">
           <DiGithubBadge id='link' /><p>Rails Finance Tracker</p>
