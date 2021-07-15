@@ -37,6 +37,11 @@ const ReposPage = () => {
         <div className="repos">
           <DiGithubBadge id='link' /><p>Django Pokemon</p>
         </div>
+        <a href='https://github.com/uwitdat/portfolio-the-3rd'
+          target='_blank'>
+          <div className="repos">
+            <DiGithubBadge id='link' /><p>React portfolio</p>
+          </div></a>
       </div>
     </div>
   )

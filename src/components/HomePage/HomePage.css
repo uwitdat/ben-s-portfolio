@@ -62,12 +62,31 @@
   padding: 0 0.5rem;
   margin-top: -2.5rem;
 }
+/* COOL HOVER ANIMATION*/
+.nav > p:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: rgb(255, 255, 255);
+  transform: scaleY(0);
+  transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
+    background-color 0.1s;
+  z-index: -1;
+}
+
+.nav > p:hover::before {
+  transform: scaleY(1);
+  width: 100%;
+}
 
 .nav > p:hover,
 p:active {
   cursor: pointer;
-
   transform: scale(1.05);
+  color: rgb(196, 42, 42);
 }
 
 p {
