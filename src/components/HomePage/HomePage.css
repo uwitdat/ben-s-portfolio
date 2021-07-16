@@ -62,7 +62,7 @@
   padding: 0 0.5rem;
   margin-top: -2.5rem;
 }
-/* COOL HOVER ANIMATION*/
+/* COOL HOVER ANIMATION */
 .nav > p:before {
   content: "";
   position: absolute;
@@ -82,8 +82,7 @@
   width: 100%;
 }
 
-.nav > p:hover,
-p:active {
+.nav > p:hover {
   cursor: pointer;
   transform: scale(1.05);
   color: rgb(196, 42, 42);
