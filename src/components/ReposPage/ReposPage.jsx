@@ -22,21 +22,29 @@ const ReposPage = () => {
             <DiGithubBadge id='link' /><p>MERN live Chat </p>
           </div></a>
 
-        <div className="repos">
-          <DiGithubBadge id='link' /><p>Rails Finance Tracker</p>
-        </div>
+        <a href='https://github.com/uwitdat/MESSAGE_ME_APP'
+          target='_blank'>
+          <div className="repos">
+            <DiGithubBadge id='link' /><p>Rails Finance Tracker</p>
+          </div></a>
 
-        <div className="repos">
-          <DiGithubBadge id='link' /><p>Rails Guitar Blog</p>
-        </div>
+        <a href='https://github.com/uwitdat/GUITAR-BLOG'
+          target='_blank'>
+          <div className="repos">
+            <DiGithubBadge id='link' /><p>Rails Guitar Blog</p>
+          </div></a>
 
-        <div className="repos">
-          <DiGithubBadge id='link' /><p>Rails Messenger</p>
-        </div>
+        <a href='https://github.com/uwitdat/MESSAGE_ME_APP'
+          target='_blank'>
+          <div className="repos">
+            <DiGithubBadge id='link' /><p>Rails Messenger</p>
+          </div></a>
 
-        <div className="repos">
-          <DiGithubBadge id='link' /><p>Django Pokemon</p>
-        </div>
+        <a href='https://github.com/uwitdat/pokemon_cards_app'
+          target='_blank'>
+          <div className="repos">
+            <DiGithubBadge id='link' /><p>Django Pokemon</p>
+          </div></a>
 
         <a href='https://github.com/uwitdat/portfolio-the-3rd'
           target='_blank'>

@@ -1,9 +1,4 @@
 import React, { useState } from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
 
 import { SliderData } from "./SliderData"
 import { SliderDataTwo } from "./SliderData"
@@ -24,6 +19,7 @@ const App = () => {
   const [isOpenThree, setIsOpenThree] = useState(false)
   const [isOpenFour, setIsOpenFour] = useState(false)
   const [isOpenFive, setIsOpenFive] = useState(false)
+  const [isOpenSix, setIsOpenSix] = useState(false)
 
   const [current, setCurrent] = useState(0);
   const [currentTwo, setCurrentTwo] = useState(0);
@@ -75,6 +71,8 @@ const App = () => {
         isOpenFour={isOpenFour}
         setIsOpenFive={setIsOpenFive}
         isOpenFive={isOpenFive}
+        setIsOpenSix={setIsOpenSix}
+        isOpenSix={isOpenSix}
       />
 
       <AboutPage />

@@ -8,6 +8,7 @@ const ResumePage = ({
   setIsOpenThree, isOpenThree,
   setIsOpenFour, isOpenFour,
   setIsOpenFive, isOpenFive,
+  setIsOpenSix, isOpenSix,
 }) => {
 
 
@@ -64,6 +65,15 @@ const ResumePage = ({
         <Modal openFive={isOpenFive} onClose={() => setIsOpenFive(!isOpenFive)}>
           <img id="expanded" src="udemy-mern.png" />
         </Modal>
+
+        <div
+          onClick={() => setIsOpenSix(true)}>
+          <img id="cerf" src="udemy-rails-cerf.png" />
+        </div>
+        <Modal openSix={isOpenSix} onClose={() => setIsOpenSix(!isOpenSix)}>
+          <img id="expanded" src="udemy-rails-cerf.png" />
+        </Modal>
+
 
 
       </div>
