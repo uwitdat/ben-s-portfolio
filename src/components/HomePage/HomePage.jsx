@@ -1,10 +1,20 @@
 import "./HomePage.css"
-import { Link } from 'react-router-dom'
 
 const HomePage = () => {
   return (
     <div className="App-container">
-      <video id="vid" src='myVid.mp4' loop="true" autoplay="autoplay" muted />
+      <div dangerouslySetInnerHTML={{
+        __html: `
+      <video 
+        id="vid" 
+        src='myVid.mp4' 
+        loop
+        autoplay 
+        muted 
+        playsinline
+        />
+        ` }}></div>
+
       <div className="header">
         <h1 className="title">BEN SHEKHTMAN </h1>
       </div>
