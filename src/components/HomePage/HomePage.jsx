@@ -8,7 +8,7 @@ const HomePage = () => {
         __html: `
       <video 
         id="vid" 
-        src='myVid.mp4' 
+        src='myVid-compress.mp4' 
         loop
         autoplay 
         muted 
