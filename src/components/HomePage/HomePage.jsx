@@ -3,6 +3,7 @@ import "./HomePage.css"
 const HomePage = () => {
   return (
     <div className="App-container">
+
       <div dangerouslySetInnerHTML={{
         __html: `
       <video 
@@ -12,6 +13,7 @@ const HomePage = () => {
         autoplay 
         muted 
         playsinline
+        type='video/mp4'
         />
         ` }}></div>
 
@@ -19,9 +21,9 @@ const HomePage = () => {
         <h1 className="title">BEN SHEKHTMAN </h1>
       </div>
       <div className="nav">
-        <p>// Resume </p>
-        <p>About</p>
-        <p>// Projects </p>
+        <a id='nav' href="#resume-title">// Resume </a>
+        <a id='nav' href="#about-title">About</a>
+        <a id='nav' href="#projects-title">// Projects </a>
       </div>
       <div className="flex-div">
         <div className="body">

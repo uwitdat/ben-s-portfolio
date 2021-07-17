@@ -12,7 +12,7 @@ const ResumePage = ({
 
 
   return (
-    <div className="container-five">
+    <div className="container-five" id='resume-title'>
 
       <h1 className="title" id="black">RESUME</h1>
 

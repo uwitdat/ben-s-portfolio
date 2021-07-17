@@ -57,13 +57,24 @@
   align-items: center;
 }
 
+#nav {
+  color: #e4e4e4;
+  display: inline;
+  font-family: "Carter One", cursive;
+  text-transform: lowercase;
+  font-size: 1.4rem;
+  transition: all 0.4s;
+  padding: 0 0.5rem;
+  margin-top: -4.5rem;
+}
+
 .nav > p {
   transition: all 0.4s;
   padding: 0 0.5rem;
   margin-top: -2.5rem;
 }
 /* COOL HOVER ANIMATION */
-.nav > p:before {
+#nav:before {
   content: "";
   position: absolute;
   top: 0;
@@ -77,12 +88,12 @@
   z-index: -1;
 }
 
-.nav > p:hover::before {
+#nav:hover::before {
   transform: scaleY(1);
   width: 100%;
 }
 
-.nav > p:hover {
+#nav:hover {
   cursor: pointer;
   transform: scale(1.05);
   color: rgb(196, 42, 42);
@@ -104,12 +115,30 @@ p {
 
 @media only screen and (max-width: 620px) {
   p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
 
 @media only screen and (min-width: 1000px) {
   p {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #nav {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  #nav {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #nav {
     font-size: 1.8rem;
   }
 }

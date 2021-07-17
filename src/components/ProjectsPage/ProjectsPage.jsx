@@ -14,7 +14,7 @@ const ProjectsPage = ({ nextSlide,
 
   return (
     <section>
-      <div className="container-two">
+      <div className="container-two" id="projects-title">
         <h1 className="title">PLAYDOG</h1>
         <div className='col-2-pics'>
           {SliderData.map((slide, index) => {
