@@ -19,7 +19,7 @@ const ResumePage = ({
 
       <div className="resume-col">
         <p id="top">Download My Resume</p>
-        <a href="resume.png" download="resume.png">
+        <a href="Ben_S_Resume.pdf" download >
           <FaDownload id="resume" />
         </a>
       </div>
