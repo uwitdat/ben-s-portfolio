@@ -7,6 +7,21 @@ const ReposPage = () => {
       <h1 className="title" id="black">MORE PROJECTS</h1>
       <div className="repos-container">
 
+        <a href='https://codesandbox.io/u/uwitdat'
+          target='_blank'><div className="repos">
+            <DiGithubBadge id='link' /><p>React/ JS sandboxes</p>
+          </div></a>
+
+        <a href='https://replit.com/@uwitdat/num-coverter#main.pyt'
+          target='_blank'><div className="repos">
+            <DiGithubBadge id='link' /><p>Python Num to Word</p>
+          </div></a>
+
+        <a href='https://replit.com/@uwitdat/num-game#script.js'
+          target='_blank'><div className="repos">
+            <DiGithubBadge id='link' /><p>JS Num Guess Game</p>
+          </div></a>
+
         <a href='https://github.com/uwitdat/gear-guru-sell-and-buy'
           target='_blank'><div className="repos">
             <DiGithubBadge id='link' /><p>Express Gear-Guru</p>
