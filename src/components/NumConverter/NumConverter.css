@@ -1,0 +1,196 @@
+.blink {
+  font-size: 1.9rem;
+  -webkit-animation: 1s linear infinite condemned_blink_effect; /* for Safari 4.0 - 8.0 */
+  animation: 1s linear infinite condemned_blink_effect;
+  color: rgb(207, 207, 207);
+}
+
+@media (max-width: 800px) {
+  .blink {
+    font-size: 1.5rem;
+  }
+}
+
+.title-holder {
+  text-align: center;
+}
+
+.container-five-term {
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@-webkit-keyframes condemned_blink_effect {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes condemned_blink_effect {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+.top {
+  font-family: "Inconsolata", monospace;
+  font-weight: 700;
+  color: rgb(104, 104, 255);
+  font-size: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .top {
+    font-size: 1.2rem;
+  }
+}
+
+.main {
+  color: rgb(202, 202, 3);
+  font-family: "Inconsolata", monospace;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .main {
+    font-size: 1.2rem;
+  }
+}
+
+.bottom {
+  font-family: "Inconsolata", monospace;
+  color: rgb(207, 207, 207);
+  font-size: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .bottom {
+    font-size: 1.2rem;
+  }
+}
+
+.bottom-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.container-for-term {
+  border: 1px solid grey;
+  height: 50vh;
+  width: 60vw;
+  background-color: rgb(39, 39, 39);
+}
+
+@media (max-width: 800px) {
+  .container-for-term {
+    height: 50vh;
+    width: 90vw;
+  }
+}
+
+.term-title {
+  font-family: "Inconsolata", monospace;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: rgb(207, 207, 207);
+  margin-left: 1rem;
+}
+
+@media (max-width: 800px) {
+  .term-title {
+    font-size: 1.2rem;
+  }
+}
+
+.result {
+  font-family: "Inconsolata", monospace;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: rgb(207, 207, 207);
+  margin-left: 0.5rem;
+  text-transform: lowercase;
+}
+
+@media (max-width: 800px) {
+  .result {
+    font-size: 1.2rem;
+  }
+}
+
+.ticker {
+  color: rgb(1, 194, 1);
+  font-size: 3rem;
+  display: inline-block;
+}
+
+@media (max-width: 800px) {
+  .ticker {
+    font-size: 2rem;
+  }
+}
+
+.terminal {
+  margin-left: 1rem;
+  margin-top: 6rem;
+  vertical-align: top;
+}
+
+.result-div {
+  display: flex;
+  align-items: center;
+  vertical-align: top;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+.input {
+  background-color: transparent;
+  border: transparent;
+  color: transparent;
+}
+
+.input:focus {
+  outline: transparent;
+}
+
+.hidden {
+  color: transparent;
+  margin-left: -8px;
+}
+
+.err {
+  color: red;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.user-input {
+  font-family: "Inconsolata", monospace;
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin-left: 0.3rem;
+  color: rgb(207, 207, 207);
+  text-transform: lowercase;
+}
+
+@media (max-width: 800px) {
+  .user-input {
+    font-size: 1.2rem;
+  }
+}

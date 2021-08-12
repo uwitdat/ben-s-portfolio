@@ -9,6 +9,7 @@ import ReposPage from './components/ReposPage/ReposPage';
 import ResumePage from './components/ResumePage/ResumePage';
 import AboutPage from './components/AboutPage/AboutPage';
 import ContactPage from './components/ContactPage/ContactPage';
+import NumConverter from './components/NumConverter/NumConverter'
 
 const App = () => {
   const length = SliderData.length;
@@ -57,7 +58,7 @@ const App = () => {
         SliderData={SliderData}
         SliderDataTwo={SliderDataTwo}
       />
-
+      <NumConverter />
       <ReposPage />
 
       <ResumePage
