@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { ones, tens, hundreds, thousands } from './convert'
 import './NumConverter.css'
 
 const NumConverter = () => {
     const [userInput, setUserInput] = useState("");
     const [result, setResult] = useState("");
+    const inputEl = useRef(null)
 
     const inititliazer = (input) => {
         if (input.length === 1) {
@@ -27,6 +28,10 @@ const NumConverter = () => {
         }
     };
 
+    const handleInputFocus = () => {
+        inputEl.current.focus()
+    }
+
     const handleOnChange = (e) => {
         setUserInput(e.target.value);
         if (e.target.value === "") {
@@ -45,13 +50,14 @@ const NumConverter = () => {
     };
 
     return (
-        <label htmlFor='input-user' className='container-five-term'>
+        <div onClick={handleInputFocus} className='container-five-term'>
             <div className='title-holder'>
                 <h1 className="title" id="black">NUMBER TO WORDS CONVERTER</h1>
             </div>
             <div className="container-for-term">
 
                 <input
+                    ref={inputEl}
                     type="text"
                     // autoFocus={true}
                     // // onBlur={({ target }) => target.focus()}
@@ -87,7 +93,7 @@ const NumConverter = () => {
                     </span>
                 </div>
             </div>
-        </label>
+        </div>
     );
 };
 
