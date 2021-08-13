@@ -54,7 +54,7 @@ const NumConverter = () => {
                 <input
                     type="text"
                     autoFocus={true}
-                    onBlur={({ target }) => target.focus()}
+                    // onBlur={({ target }) => target.focus()}
                     className="input"
                     value={userInput}
                     onChange={handleOnChange}
