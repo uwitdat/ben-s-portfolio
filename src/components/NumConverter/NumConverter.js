@@ -58,6 +58,7 @@ const NumConverter = () => {
                     value={userInput}
                     onChange={handleOnChange}
                     name="input-user"
+                    autocomplete="off"
                 />
                 <h4 className="term-title">MY_TERMINAL</h4>
                 <div className="terminal">

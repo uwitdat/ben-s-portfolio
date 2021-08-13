@@ -163,6 +163,7 @@
   background-color: transparent;
   border: transparent;
   color: transparent;
+  user-select: none;
 }
 
 .input:focus {
