@@ -45,19 +45,20 @@ const NumConverter = () => {
     };
 
     return (
-        <div className='container-five-term'>
+        <label htmlFor='input-user' className='container-five-term'>
             <div className='title-holder'>
                 <h1 className="title" id="black">NUMBER TO WORDS CONVERTER</h1>
             </div>
             <div className="container-for-term">
+
                 <input
                     type="text"
-                    autoFocus={true}
-                    onBlur={({ target }) => target.focus()}
+                    // autoFocus={true}
+                    // onBlur={({ target }) => target.focus()}
                     className="input"
                     value={userInput}
                     onChange={handleOnChange}
-                    name="input-user"
+                    id="input-user"
                     autocomplete="off"
                 />
                 <h4 className="term-title">MY_TERMINAL</h4>
@@ -67,7 +68,7 @@ const NumConverter = () => {
                     </p>
                     <div className="bottom-container">
                         <p className="bottom">
-                            enter a number between 0-9999:
+                            click to enter a number between 0-9999:
                             {userInput !== "" ? (
                                 <span className="blink hidden">&#10073;</span>
                             ) : (
@@ -86,7 +87,7 @@ const NumConverter = () => {
                     </span>
                 </div>
             </div>
-        </div>
+        </label>
     );
 };
 
