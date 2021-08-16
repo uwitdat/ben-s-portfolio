@@ -5,6 +5,7 @@ import './NumConverter.css'
 const NumConverter = () => {
     const [userInput, setUserInput] = useState("");
     const [result, setResult] = useState("");
+
     const inputEl = useRef(null)
 
     const inititliazer = (input) => {
@@ -28,7 +29,8 @@ const NumConverter = () => {
         }
     };
 
-    const handleInputFocus = () => {
+
+    const handleFocusInput = () => {
         inputEl.current.focus()
     }
 
@@ -50,7 +52,7 @@ const NumConverter = () => {
     };
 
     return (
-        <div onClick={handleInputFocus} className='container-five-term'>
+        <div onClick={handleFocusInput} className='container-five-term'>
             <div className='title-holder'>
                 <h1 className="title" id="black">NUMBER TO WORDS CONVERTER</h1>
             </div>
