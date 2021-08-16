@@ -7,6 +7,11 @@ const ReposPage = () => {
       <h1 className="title" id="black">MORE PROJECTS</h1>
       <div className="repos-container">
 
+        <a href='https://github.com/uwitdat/weather-api'
+          target='_blank'><div className="repos">
+            <DiGithubBadge id='link' /><p>Weather Api App</p>
+          </div></a>
+
         <a href='https://codesandbox.io/u/uwitdat'
           target='_blank'><div className="repos">
             <DiGithubBadge id='link' /><p>React/ JS sandboxes</p>
