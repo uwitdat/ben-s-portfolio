@@ -45,7 +45,7 @@ const ProjectsPage = ({ nextSlide,
         </div>
       </div>
       <div className="container-three">
-        <h1 className="title margin-less" id="black">TRADE / ER</h1>
+        <h1 className="title margin-less" id="black">IMMIGROW</h1>
         <div className='col-2-pics'>
           {SliderDataTwo.map((slide, index) => {
             return (
@@ -62,12 +62,12 @@ const ProjectsPage = ({ nextSlide,
           <FaArrowAltCircleRight className='right-arr' onClick={nextSlideTwo} />
         </div>
         <div className="links">
-          <a href='https://github.com/uwitdat/trader-among-us'
+          <a href='https://github.com/uwitdat/IMMIGROW_CLIENT'
             target='_blank'>
             <DiGithubBadge
               id='link' />
           </a>
-          <a href='https://trader-among-us.herokuapp.com/login'
+          <a href='https://uwitdat.github.io/IMMIGROW_CLIENT/'
             target='_blank'>
             <DiHeroku
               id='link' />

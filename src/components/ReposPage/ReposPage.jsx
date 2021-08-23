@@ -22,6 +22,11 @@ const ReposPage = () => {
             <DiGithubBadge id='link' /><p>Python Num to Word</p>
           </div></a>
 
+        <a href='https://github.com/uwitdat/trader-among-us'
+          target='_blank'><div className="repos">
+            <DiGithubBadge id='link' /><p>MERN Stack barter app</p>
+          </div></a>
+
         <a href='https://replit.com/@uwitdat/num-game#script.js'
           target='_blank'><div className="repos">
             <DiGithubBadge id='link' /><p>JS Num Guess Game</p>

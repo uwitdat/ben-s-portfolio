@@ -12,15 +12,13 @@ export const SliderData = [
 
 export const SliderDataTwo = [
     {
-        image: 'trader2.png'
+        image: 'immgrow1.png'
     },
     {
-        image: 'trader1.png'
+        image: 'immigrow2.png'
     },
     {
-        image: 'trader3.png'
+        image: 'immigrow3.png'
     },
-    {
-        image: 'trader4.png'
-    },
+
 ]

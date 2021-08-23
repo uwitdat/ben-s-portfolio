@@ -9,6 +9,7 @@ const ResumePage = ({
   setIsOpenFour, isOpenFour,
   setIsOpenFive, isOpenFive,
   setIsOpenSix, isOpenSix,
+  setIsOpenSev, isOpenSev
 }) => {
 
 
@@ -19,7 +20,7 @@ const ResumePage = ({
 
       <div className="resume-col">
         <p id="top">Download My Resume</p>
-        <a href="Ben_S_Resume.pdf" download >
+        <a href="Ben's Resume.pdf" download >
           <FaDownload id="resume" />
         </a>
       </div>
@@ -72,6 +73,14 @@ const ResumePage = ({
         </div>
         <Modal openSix={isOpenSix} onClose={() => setIsOpenSix(!isOpenSix)}>
           <img id="expanded" src="udemy-rails-cerf.png" />
+        </Modal>
+
+        <div
+          onClick={() => setIsOpenSev(true)}>
+          <img id="cerf" src="hackathon-winners.png" />
+        </div>
+        <Modal openSev={isOpenSev} onClose={() => setIsOpenSev(!isOpenSev)}>
+          <img id="expanded" src="hackathon-winners.png" />
         </Modal>
 
 
