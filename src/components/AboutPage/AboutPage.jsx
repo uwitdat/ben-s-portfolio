@@ -5,31 +5,36 @@ const AboutPage = () => {
     <div className="container-sev" id="about-title">
       <h1 className="title" id="black">ABOUT</h1>
       <div id="about">
-        <p>My languages and frameworks include:</p>
+        <p style={{ fontSize: '2rem', color: 'rgb(255, 151, 167)' }}>Primary Languages:</p>
 
       </div>
       <div id="about">
-        <p>JavaScript</p>
         <p>React</p>
-        <p>Python</p>
-        <p>Django</p>
-        <p>Ruby on Rails</p>
+        <p>Redux</p>
+        <p>JavaScript</p>
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>SCSS/SASS</p>
+
       </div>
-      <div id="about-two">
+      <div id="about">
         <p>MongoDB</p>
         <p>Express</p>
-        <p>NodeJS</p>
+        <p>Node</p>
         <p>GitHub</p>
-        <p>AWS</p>
+        <p>CSS FRAMEWORKS</p>
       </div>
 
       <div id="about">
-        <p>CSS</p>
-        <p>SASS</p>
-        <p>Materialize</p>
-        <p>Bootstrap</p>
-
+        <p style={{ fontSize: '2rem', color: 'rgb(255, 151, 167)' }}>Currently Improving:</p>
       </div>
+      <div id="about">
+        <p>React Native</p>
+        <p>Typescript</p>
+        <p>GRAPHQL</p>
+        <p>PYTHON</p>
+      </div>
+
     </div>
   )
 }

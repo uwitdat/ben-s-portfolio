@@ -20,7 +20,7 @@ const ResumePage = ({
 
       <div className="resume-col">
         <p id="top">Download My Resume</p>
-        <a href="Ben's Resume.pdf" download >
+        <a href="bens-resume-update.pdf" download >
           <FaDownload id="resume" />
         </a>
       </div>
