@@ -5,7 +5,7 @@ const AboutPage = () => {
     <div className="container-sev" id="about-title">
       <h1 className="title" id="black">ABOUT</h1>
       <div id="about">
-        <p style={{ fontSize: '2rem', color: 'rgb(255, 151, 167)' }}>Primary Languages:</p>
+        <p style={{ fontSize: '1.8rem', color: 'rgb(255, 151, 167)' }}>Primary Languages:</p>
 
       </div>
       <div id="about">
@@ -26,7 +26,7 @@ const AboutPage = () => {
       </div>
 
       <div id="about">
-        <p style={{ fontSize: '2rem', color: 'rgb(255, 151, 167)' }}>Currently Improving:</p>
+        <p style={{ fontSize: '1.8rem', color: 'rgb(255, 151, 167)' }}>Currently Studying:</p>
       </div>
       <div id="about">
         <p>React Native</p>
