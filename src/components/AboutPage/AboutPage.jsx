@@ -21,10 +21,9 @@ const AboutPage = () => {
       <div id="about">
         <p style={{ color: 'rgb(255, 151, 167)' }}>AWS <br />Lambda, DynamoDB, S3, API Gateway, SAM, Cloudwatch</p>
         <p>Flask</p>
-        <p>Express</p>
+        <p>Express/ Node</p>
         <p>MongoDB/ Mongoose</p>
         <p>SQL (PostgresQL, SQLite)</p>
-        <p>Node</p>
         <p>Git</p>
 
       </div>
