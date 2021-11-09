@@ -14,8 +14,8 @@ const OVERLAYS = {
     zIndex: 1000
 
 }
-export default function Modal({ children, open, onClose, openTwo, openThree, openFour, openFive, openSix, openSev }) {
-    if (!open && !openTwo && !openThree && !openFour && !openFive && !openSix && !openSev) return null
+export default function Modal({ children, open, onClose, openTwo, openThree, openFour, openFive, openSix, openSev, openEight }) {
+    if (!open && !openTwo && !openThree && !openFour && !openFive && !openSix && !openSev && !openEight) return null
 
     return ReactDom.createPortal(
         <>

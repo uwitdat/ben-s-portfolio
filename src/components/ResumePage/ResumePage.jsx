@@ -9,7 +9,8 @@ const ResumePage = ({
   setIsOpenFour, isOpenFour,
   setIsOpenFive, isOpenFive,
   setIsOpenSix, isOpenSix,
-  setIsOpenSev, isOpenSev
+  setIsOpenSev, isOpenSev,
+  setIsOpenEight, isOpenEight
 }) => {
 
 
@@ -83,7 +84,13 @@ const ResumePage = ({
           <img id="expanded" src="hackathon-winners.png" />
         </Modal>
 
-
+        <div
+          onClick={() => setIsOpenEight(true)}>
+          <img id="cerf" src="udemy-flask-aws.jpeg" />
+        </div>
+        <Modal openEight={isOpenEight} onClose={() => setIsOpenEight(!isOpenEight)}>
+          <img id="expanded" src="udemy-flask-aws.jpeg" />
+        </Modal>
 
       </div>
     </div>

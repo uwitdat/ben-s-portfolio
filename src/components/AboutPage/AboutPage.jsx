@@ -9,31 +9,26 @@ const AboutPage = () => {
 
       </div>
       <div id="about">
-        <p>React</p>
-        <p>Redux</p>
-        <p>JavaScript</p>
-        <p>HTML</p>
-        <p>CSS</p>
+        <p>React (Redux, Hooks)</p>
+        <p>JavaScript (ES6)</p>
+        <p>TypeScript</p>
+        <p>Python</p>
+        <p>HTML/CSS</p>
         <p>SCSS/SASS</p>
+        <p style={{ color: 'rgb(255, 151, 167)' }}>CSS FRAMEWORKS <br />MUI, Bootstrap, etc...</p>
 
       </div>
       <div id="about">
-        <p>MongoDB</p>
+        <p style={{ color: 'rgb(255, 151, 167)' }}>AWS <br />Lambda, DynamoDB, S3, API Gateway, SAM, Cloudwatch</p>
+        <p>Flask</p>
         <p>Express</p>
+        <p>MongoDB/ Mongoose</p>
+        <p>SQL (PostgresQL, SQLite)</p>
         <p>Node</p>
-        <p>GitHub</p>
-        <p>CSS FRAMEWORKS</p>
+        <p>Git</p>
+
       </div>
 
-      <div id="about">
-        <p style={{ fontSize: '1.8rem', color: 'rgb(255, 151, 167)' }}>Currently Studying:</p>
-      </div>
-      <div id="about">
-        <p>React Native</p>
-        <p>Typescript</p>
-        <p>GRAPHQL</p>
-        <p>PYTHON</p>
-      </div>
 
     </div>
   )
