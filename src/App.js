@@ -23,6 +23,7 @@ const App = () => {
   const [isOpenSix, setIsOpenSix] = useState(false)
   const [isOpenSev, setIsOpenSev] = useState(false)
   const [isOpenEight, setIsOpenEight] = useState(false)
+  const [isOpenNine, setIsOpenNine] = useState(false)
 
   const [current, setCurrent] = useState(0);
   const [currentTwo, setCurrentTwo] = useState(0);
@@ -80,6 +81,8 @@ const App = () => {
         isOpenSev={isOpenSev}
         setIsOpenEight={setIsOpenEight}
         isOpenEight={isOpenEight}
+        isOpenNine={isOpenNine}
+        setIsOpenNine={setIsOpenNine}
       />
 
       <AboutPage />

@@ -10,7 +10,8 @@ const ResumePage = ({
   setIsOpenFive, isOpenFive,
   setIsOpenSix, isOpenSix,
   setIsOpenSev, isOpenSev,
-  setIsOpenEight, isOpenEight
+  setIsOpenEight, isOpenEight,
+  setIsOpenNine, isOpenNine
 }) => {
 
 
@@ -90,6 +91,14 @@ const ResumePage = ({
         </div>
         <Modal openEight={isOpenEight} onClose={() => setIsOpenEight(!isOpenEight)}>
           <img id="expanded" src="udemy-flask-aws.jpeg" />
+        </Modal>
+
+        <div
+          onClick={() => setIsOpenNine(true)}>
+          <img id="cerf" src="coursera-python.png" />
+        </div>
+        <Modal openNine={isOpenNine} onClose={() => setIsOpenNine(!isOpenNine)}>
+          <img id="expanded" src="coursera-python.png" />
         </Modal>
 
       </div>
