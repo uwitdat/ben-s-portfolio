@@ -68,6 +68,12 @@
   margin-left: 2rem;
 }
 
+@media only screen and (max-width: 600px) {
+  .WorkExpDetailsLans {
+    margin-left: 0;
+  }
+}
+
 .WorkExpDetailsLans div {
   padding: 2.4rem;
   border-radius: 10px;
