@@ -1,0 +1,82 @@
+.WorkExp {
+  min-height: 100vh;
+  color: white;
+  scroll-snap-align: start;
+}
+
+
+.WorkExpDetails {
+  height: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+
+}
+
+.WorkExpDetailsDetail {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.WorkExpDetailsTitle{
+  margin-left: 4rem;
+  width: 35rem;
+}
+
+.WorkExpDetailsTitle h3 {
+  font-family: "Fugaz One", cursive;
+  font-size: 2.3rem;
+  line-height: .8;
+}
+
+@media only screen and (max-width: 600px) {
+  .WorkExpDetailsTitle h3 {
+    font-size: 1.8rem;
+    line-height: 1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .WorkExpDetailsTitle {
+   align-self: center;
+   margin: 0;
+   text-align: center;
+  }
+}
+
+.WorkExpDetailsTitle h3 span {
+  font-size: 1.2rem;
+  text-transform: none;
+}
+
+.WorkExpDetailsTitle h5 {
+  font-family: "Fugaz One", cursive;
+  font-size: 1.4rem;
+  margin-top: -1.5rem;
+  color: rgb(138, 138, 138);
+}
+
+.WorkExpDetailsLans {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.WorkExpDetailsLans div {
+  padding: 2.4rem;
+  border-radius: 10px;
+  background-color: rgba(111, 111, 111, 0.104);
+  border: 1px solid rgba(98, 98, 98, 0.169);
+  margin: .8rem;
+}
+
+.WorkExpDetailsLans div > svg {
+  font-size: 3.5rem;
+  /* color: rgb(174, 62, 199); */
+}

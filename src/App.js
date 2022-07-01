@@ -5,11 +5,9 @@ import { SliderDataTwo } from "./SliderData"
 
 import HomePage from './components/HomePage/HomePage'
 import ProjectsPage from './components/ProjectsPage/ProjectsPage';
-import ReposPage from './components/ReposPage/ReposPage';
 import ResumePage from './components/ResumePage/ResumePage';
-import AboutPage from './components/AboutPage/AboutPage';
 import ContactPage from './components/ContactPage/ContactPage';
-import NumConverter from './components/NumConverter/NumConverter'
+import WorkExp from './components/WorkExperience/WorkExp';
 
 const App = () => {
   const length = SliderData.length;
@@ -17,13 +15,6 @@ const App = () => {
 
   const [isOpen, setIsOpen] = useState(false)
   const [isOpenTwo, setIsOpenTwo] = useState(false)
-  const [isOpenThree, setIsOpenThree] = useState(false)
-  const [isOpenFour, setIsOpenFour] = useState(false)
-  const [isOpenFive, setIsOpenFive] = useState(false)
-  const [isOpenSix, setIsOpenSix] = useState(false)
-  const [isOpenSev, setIsOpenSev] = useState(false)
-  const [isOpenEight, setIsOpenEight] = useState(false)
-  const [isOpenNine, setIsOpenNine] = useState(false)
 
   const [current, setCurrent] = useState(0);
   const [currentTwo, setCurrentTwo] = useState(0);
@@ -48,6 +39,7 @@ const App = () => {
 
     <main>
       <HomePage />
+      <WorkExp />
 
       <ProjectsPage
         nextSlide={nextSlide}
@@ -61,34 +53,22 @@ const App = () => {
         SliderData={SliderData}
         SliderDataTwo={SliderDataTwo}
       />
-      <NumConverter />
-      <ReposPage />
+      {/*  <NumConverter /> */}
+
+      {/* <ReposPage /> */}
 
       <ResumePage
         setIsOpen={setIsOpen}
         isOpen={isOpen}
         setIsOpenTwo={setIsOpenTwo}
         isOpenTwo={isOpenTwo}
-        setIsOpenThree={setIsOpenThree}
-        isOpenThree={isOpenThree}
-        setIsOpenFour={setIsOpenFour}
-        isOpenFour={isOpenFour}
-        setIsOpenFive={setIsOpenFive}
-        isOpenFive={isOpenFive}
-        setIsOpenSix={setIsOpenSix}
-        isOpenSix={isOpenSix}
-        setIsOpenSev={setIsOpenSev}
-        isOpenSev={isOpenSev}
-        setIsOpenEight={setIsOpenEight}
-        isOpenEight={isOpenEight}
-        isOpenNine={isOpenNine}
-        setIsOpenNine={setIsOpenNine}
       />
 
-      <AboutPage />
+
+
+      {/*  <AboutPage /> */}
 
       <ContactPage />
-
     </main>
 
   )

@@ -1,39 +1,62 @@
 import './ContactPage.css'
 import { DiGithubBadge } from 'react-icons/di'
-import { AiFillLinkedin, AiFillFacebook } from 'react-icons/ai'
+import { AiFillLinkedin } from 'react-icons/ai'
+import { BiMailSend } from 'react-icons/bi'
+import EmailMe from '../EmailMe/EmailMe'
+import React, { useState, useEffect } from 'react'
 
 const ContactPage = () => {
+  const [email, setEmail] = useState(false);
+  const [success, setSuccess] = useState(false);
+
+  useEffect(() => {
+    email ? document.body.style.overflow = "hidden" : document.body.style.overflow = "scroll"
+  }, [email])
+
   return (
-    <div className="container-sev">
+    <div className="container-sev" id='contact-me'>
       <h1 className="title" id="black">CONTACT ME</h1>
-
-      <div className="flx-row">
-        <div className="flx-txt">
-          <p id="top-shadow">Based in</p>
-          <div className="more"><p className="pink" id="top-bold">benshekhtman</p></div>
-        </div>
-
-        <div className="flx-txt-two">
-          <p id="top-shadow-two">Toronto, on</p>
-          <div className="more-two"><p className="pink" id="top-bold-two">@hotmail.com</p></div>
-        </div>
-      </div>
-
       <div className="links">
-        <a href='https://www.linkedin.com/in/ben-shekhtman-751475178/'
-          target='_blank'>
-          <AiFillLinkedin id='link'
-          />
-        </a>
-        <a href='https://www.facebook.com/ben.shekhtman/'
-          target='_blank'>
-          <AiFillFacebook id='link' />
-        </a>
-        <a href='https://www.github.com/uwitdat/'
-          target='_blank'>
-          <DiGithubBadge id='link' />
-        </a>
+        <div className="link">
+          <a href='https://www.linkedin.com/in/ben-shekhtman-751475178/'
+            target='_blank' rel="noreferrer">
+            <AiFillLinkedin id='link'
+            />
+          </a>
+          <h3>LinkedIn</h3>
+        </div>
+
+        <div className="link">
+          <a href='https://www.github.com/uwitdat/'
+            target='_blank' rel="noreferrer">
+            <DiGithubBadge id='link' />
+          </a>
+          <h3>Github</h3>
+        </div>
+
       </div>
+      <div className={email ? 'expanded' : 'email-me'}>
+        {email ? (
+          <React.Fragment>
+            <EmailMe setEmail={setEmail} setSuccess={setSuccess} />
+
+          </React.Fragment>
+        ) : (
+          <React.Fragment>
+            {success ? (
+              <p>sent! 🎉</p>
+            ) : (
+              <React.Fragment>
+                <BiMailSend onClick={() => setEmail(true)} />
+                <p onClick={() => setEmail(true)}> Email Me</p>
+              </React.Fragment>
+            )}
+
+          </React.Fragment>
+        )}
+
+      </div>
+      <footer className='footer'>© Ben Shekhtman {new Date().getFullYear()}</footer>
     </div>
   )
 }

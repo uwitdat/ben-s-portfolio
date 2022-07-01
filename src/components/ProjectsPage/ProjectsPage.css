@@ -1,6 +1,7 @@
 .container-two {
+  position: relative;
   background-color: rgb(0, 0, 0);
-  height: auto;
+  height: 100vh;
   background: linear-gradient(
     135deg,
     #000000 44%,
@@ -14,8 +15,15 @@
   background-repeat: no-repeat; /* To avoid multiple instances */
 }
 
+.container-two h1,
+.container-three h1 {
+  transform: translateY(1.5rem);
+}
+
+
 .container-three {
-  height: auto;
+  position: relative;
+  height: 100vh;
   background-color: black;
   background: linear-gradient(
     135deg,
@@ -28,7 +36,7 @@
 
 #playdog {
   height: 30rem;
-  width: auto;
+  /* width: auto; */
   user-select: none;
 }
 
@@ -43,10 +51,10 @@
 }
 
 .right-arr {
-  color: rgb(231, 231, 231);
+  color: rgba(231, 231, 231, 0.432);
   font-size: 2.4rem;
   margin: 0 1rem;
-  transition: 300ms;
+  transition: all 400ms;
 }
 
 .right-arr:hover {
@@ -73,4 +81,65 @@
 
 .margin-less {
   margin-top: 0;
+}
+
+.repo-badge {
+  padding: 1rem;
+  position: absolute;
+  top: 35%;
+  left: 2rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: .6;
+  transition: all 350ms;
+  animation: pulse 2s ease-out infinite;
+}
+
+@media only screen and (max-width: 600px) {
+  .repo-badge {
+    top: 78%;
+    left: 0;
+  }
+
+  .repo-badge > svg {
+    font-size: 3.6rem !important;
+  }
+}
+
+.repo-badge > svg {
+  color: white;
+  font-size: 4.5rem;
+  border: 3px solid rgb(32, 32, 32);
+  border-radius: 50%;
+  background-color: rgb(32, 32, 32);
+}
+
+.repo-badge > p {
+  font-size: 1rem;
+  margin-top: -0.01rem;
+  text-transform: capitalize;
+  user-select: none;
+} 
+
+.repo-badge:hover {
+  opacity: 1;
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+   animation-play-state: paused;
+}
+
+@keyframes pulse {
+  0%{
+    transform: translateY(0) scale(1); 
+  
+  }
+  50%{
+    transform: translateY(10px) scale(1.05);
+  }
+  100%{
+    transform: translateY(0) scale(1);
+  }
 }

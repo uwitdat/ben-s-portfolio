@@ -1,6 +1,6 @@
 import "./ProjectsPage.css"
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa'
-import { DiGithubBadge, DiHeroku } from 'react-icons/di'
+import { DiGithubBadge } from 'react-icons/di'
 
 const ProjectsPage = ({ nextSlide,
   nextSlideTwo,
@@ -31,18 +31,15 @@ const ProjectsPage = ({ nextSlide,
           <FaArrowAltCircleLeft className='right-arr' onClick={prevSlide} />
           <FaArrowAltCircleRight className='right-arr' onClick={nextSlide} />
         </div>
-        <div className="links">
-          <a href='https://github.com/uwitdat/playdog-project3'
-            target='_blank'>
-            <DiGithubBadge
-              id='link' />
-          </a>
-          <a href='https://playdog-playdate.herokuapp.com'
-            target='_blank'>
-            <DiHeroku
-              id='link' />
-          </a>
-        </div>
+
+        <a href='https://github.com/uwitdat/playdog-project3'
+          target='_blank' rel="noreferrer">
+          <div className="repo-badge">
+            <DiGithubBadge />
+            <p>Github</p>
+          </div>
+        </a>
+
       </div>
       <div className="container-three">
         <h1 className="title margin-less" id="black">IMMIGROW</h1>
@@ -52,7 +49,7 @@ const ProjectsPage = ({ nextSlide,
               <div className={index === currentTwo ? 'slide active' : 'slide'}
                 key={index}
               >
-                {index === currentTwo && (<img id='playdog' src={slide.image}></img>)}
+                {index === currentTwo && (<img style={{ transform: 'translateX(10px)' }} id='playdog' src={slide.image}></img>)}
               </div>
             )
           })}
@@ -61,18 +58,15 @@ const ProjectsPage = ({ nextSlide,
           <FaArrowAltCircleLeft className='right-arr' onClick={prevSlideTwo} />
           <FaArrowAltCircleRight className='right-arr' onClick={nextSlideTwo} />
         </div>
-        <div className="links">
-          <a href='https://github.com/uwitdat/IMMIGROW_CLIENT'
-            target='_blank'>
-            <DiGithubBadge
-              id='link' />
-          </a>
-          <a href='https://uwitdat.github.io/IMMIGROW_CLIENT/'
-            target='_blank'>
-            <DiHeroku
-              id='link' />
-          </a>
-        </div>
+
+        <a href='https://github.com/uwitdat/IMMIGROW_CLIENT'
+          target='_blank' rel="noreferrer">
+          <div className="repo-badge">
+            <DiGithubBadge />
+            <p>Github</p>
+          </div>
+        </a>
+
       </div>
     </section>
   )

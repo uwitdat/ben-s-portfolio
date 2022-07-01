@@ -6,9 +6,13 @@
   z-index: 2;
 }
 
+.container-five h1 {
+  transform: translateY(2rem);
+}
+
 #cerf {
-  height: 18rem;
-  width: 18rem;
+  height: 24rem;
+  aspect-ratio: 1;
   object-fit: contain;
   border: 1px solid rgba(136, 136, 136, 0);
   padding: 0.5rem;
@@ -17,6 +21,13 @@
   transition: all 300ms;
   user-select: none;
   margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  #cerf {
+    height: 18rem;
+  }
+
 }
 
 #cerf:hover {
@@ -29,6 +40,7 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-top: 3rem;
 }
 
 .expanded {
@@ -48,7 +60,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0.5rem 0 2.5rem 0;
+  margin: 3rem 0 1rem 0;
 }
 
 #resume {

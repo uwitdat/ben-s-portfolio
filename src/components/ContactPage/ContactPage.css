@@ -1,5 +1,6 @@
 .container-sev {
-  height: auto;
+  height: 100vh;
+  position: relative;
 
   background: linear-gradient(
     135deg,
@@ -57,4 +58,143 @@
 
 .more-two {
   padding-right: 3vw;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  color: white;
+  display: flex;
+  align-items: center;
+  font-family: "Fugaz One", cursive;
+  font-size: 1.2rem;
+}
+.link h3 {
+  margin-left: .5rem;
+}
+
+.link > a {
+  color: rgba(255, 255, 255, 0.553);
+  font-size: 3.5rem;
+  transform: translateY(8px);
+  transition: all 350ms;
+}
+
+.link > a:hover {
+  color: white;
+}
+
+.email-me {
+  border: 1px solid rgba(89, 89, 89, 0.211);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  aspect-ratio: 1;
+  height: 9rem;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  background-color: rgba(41, 41, 41, 0.414);
+  animation: pulse 2s ease-out infinite;
+  transition: all 300ms ease;
+}
+
+.expanded{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  aspect-ratio: 0;
+  animation: none;
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0.788);
+  left: 0;
+  top: 0;
+  animation: width 500ms ease forwards;
+  transition: all ease 250ms;
+}
+
+@keyframes width {
+  from {
+    width: 10rem;
+    height: 10rem;
+  }
+  to{
+    width: 100vw;
+    height: 100vh;
+  }
+  
+}
+.email-me > svg {
+  color: white;
+  font-size: 2.3rem;
+  opacity: .6;
+  transition: 250ms;
+}
+
+.email-me p {
+  margin: 0;
+  font-size: 1.3rem;
+  opacity: .6;
+  transition: 250ms;
+}
+
+@media only screen and (max-width: 600px) {
+  .email-me {
+    height: 7.5rem;
+  }
+
+  .email-me > svg {
+    font-size: 2rem;
+  }
+
+  .email-me p {
+    font-size: 1rem;
+  }
+}
+
+.email-me:hover {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+     animation-play-state: paused;
+}
+
+.email-me:hover > p,
+.email-me:hover > svg {
+  opacity: 1;
+}
+
+
+@keyframes pulse {
+  0%{
+    transform: translateY(0) scale(1); 
+  
+  }
+  50%{
+    transform: translateY(10px) scale(1.05);
+  }
+  100%{
+    transform: translateY(0) scale(1);
+  }
+}
+
+.footer {
+  color: rgba(255, 255, 255, 0.332);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+  font-size: 1.1rem;
+  text-align: right;
+  font-family: "Fugaz One", cursive;
 }
