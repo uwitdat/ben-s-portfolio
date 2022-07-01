@@ -22,7 +22,7 @@ const ProjectsPage = ({ nextSlide,
               <div className={index === current ? 'slide active' : 'slide'}
                 key={index}
               >
-                {index === current && (<img id='playdog' src={slide.image}></img>)}
+                {index === current && (<img id='playdog' src={slide.image} alt=''></img>)}
               </div>
             )
           })}
@@ -49,7 +49,7 @@ const ProjectsPage = ({ nextSlide,
               <div className={index === currentTwo ? 'slide active' : 'slide'}
                 key={index}
               >
-                {index === currentTwo && (<img style={{ transform: 'translateX(10px)' }} id='playdog' src={slide.image}></img>)}
+                {index === currentTwo && (<img style={{ transform: 'translateX(10px)' }} id='playdog' src={slide.image} alt=''></img>)}
               </div>
             )
           })}

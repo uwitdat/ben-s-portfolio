@@ -22,10 +22,10 @@ const ResumePage = ({
       <div className="cerf-row">
         <div
           onClick={() => setIsOpen(true)}>
-          <img id="cerf" src="cerf.png" />
+          <img id="cerf" src="cerf.png" alt='' />
         </div>
         <Modal open={isOpen} onClose={() => setIsOpen(!isOpen)}>
-          <img id="expanded" src="cerf.png" />
+          <img id="expanded" src="cerf.png" alt='' />
         </Modal>
 
       </div>
