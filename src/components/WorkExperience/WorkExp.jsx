@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { FaReact, FaNodeJs } from 'react-icons/fa';
 import { SiJavascript, SiMongodb, SiGraphql, SiTypescript, SiTailwindcss } from 'react-icons/si';
 import './WorkExp.css';
@@ -8,7 +8,13 @@ import AWS from '../../assets/svgs/aws.svg';
 import POSTGRES from '../../assets/svgs/pgsql.svg';
 
 
-const WorkExp = () => {
+const WorkExp = ({ isVisible }) => {
+  const [animIn, setAnimIn] = useState(false);
+
+  useEffect(() => {
+    if (isVisible) setAnimIn(true)
+  }, [isVisible])
+
   return (
     <div className='WorkExp'>
       <div className="header">
@@ -16,11 +22,11 @@ const WorkExp = () => {
       </div>
       <section className='WorkExpDetails'>
         <div className='WorkExpDetailsDetail'>
-          <div className='WorkExpDetailsTitle'>
+          <div className={animIn ? 'WorkExpDetailsTitle trans-in first' : 'WorkExpDetailsTitle'}>
             <h3>Myplanet <span> 2022 - Present</span></h3>
             <h5>&bull; Software Developer</h5>
           </div>
-          <div className='WorkExpDetailsLans'>
+          <div className={animIn ? 'WorkExpDetailsLans trans-in first' : 'WorkExpDetailsLans'}>
             <div>
               <FaReact style={{ color: 'rgb(135, 197, 255)' }} />
             </div>
@@ -37,11 +43,11 @@ const WorkExp = () => {
         </div>
 
         <div className='WorkExpDetailsDetail'>
-          <div className='WorkExpDetailsTitle'>
+          <div className={animIn ? 'WorkExpDetailsTitle trans-in second' : 'WorkExpDetailsTitle'}>
             <h3>Sedin Technologies <span> 2022</span></h3>
             <h5>&bull; Full-Stack Developer</h5>
           </div>
-          <div className='WorkExpDetailsLans'>
+          <div className={animIn ? 'WorkExpDetailsLans trans-in second' : 'WorkExpDetailsLans'}>
             <div style={{ position: 'relative' }}>
               <span style={nextStyle} />
               <img style={svgStyle} src={NEXT} alt='' />
@@ -59,11 +65,11 @@ const WorkExp = () => {
         </div>
 
         <div className='WorkExpDetailsDetail'>
-          <div className='WorkExpDetailsTitle'>
+          <div className={animIn ? 'WorkExpDetailsTitle trans-in third' : 'WorkExpDetailsTitle'}>
             <h3>ServUs Health <span> 2021 - 2022</span></h3>
             <h5>&bull; Full-Stack Developer</h5>
           </div>
-          <div className='WorkExpDetailsLans'>
+          <div className={animIn ? 'WorkExpDetailsLans trans-in third' : 'WorkExpDetailsLans'}>
             <div>
               <FaReact style={{ color: 'rgb(135, 197, 255)' }} />
             </div>

@@ -9,6 +9,8 @@ import ResumePage from './components/ResumePage/ResumePage';
 import ContactPage from './components/ContactPage/ContactPage';
 import WorkExp from './components/WorkExperience/WorkExp';
 
+import { useIntersectionObserver } from './hooks/index';
+
 const App = () => {
   const length = SliderData.length;
   const lengthTwo = SliderDataTwo.length;
@@ -35,11 +37,21 @@ const App = () => {
     setCurrentTwo(currentTwo === 0 ? lengthTwo - 1 : currentTwo - 1);
   };
 
-  return (
+  const options = {
+    root: null,
+    rootMargin: '-20px',
+    threshold: 0.3
+  }
+  const [container, isVisible] = useIntersectionObserver(options)
+  const [containerTwo, isVisibleTwo] = useIntersectionObserver(options)
+  const [containerThree, isVisibleThree] = useIntersectionObserver(options)
 
+  return (
     <main>
       <HomePage />
-      <WorkExp />
+      <div ref={container}>
+        <WorkExp isVisible={isVisible} />
+      </div>
 
       <ProjectsPage
         nextSlide={nextSlide}
@@ -53,24 +65,21 @@ const App = () => {
         SliderData={SliderData}
         SliderDataTwo={SliderDataTwo}
       />
-      {/*  <NumConverter /> */}
 
-      {/* <ReposPage /> */}
+      <div ref={containerTwo}>
+        <ResumePage
+          setIsOpen={setIsOpen}
+          isOpen={isOpen}
+          setIsOpenTwo={setIsOpenTwo}
+          isOpenTwo={isOpenTwo}
+          isVisible={isVisibleTwo}
+        />
+      </div>
 
-      <ResumePage
-        setIsOpen={setIsOpen}
-        isOpen={isOpen}
-        setIsOpenTwo={setIsOpenTwo}
-        isOpenTwo={isOpenTwo}
-      />
-
-
-
-      {/*  <AboutPage /> */}
-
-      <ContactPage />
+      <div ref={containerThree}>
+        <ContactPage isVisible={isVisibleThree} />
+      </div>
     </main>
-
   )
 }
 
