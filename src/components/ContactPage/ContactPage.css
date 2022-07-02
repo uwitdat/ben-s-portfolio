@@ -198,3 +198,12 @@
   text-align: right;
   font-family: "Fugaz One", cursive;
 }
+
+.email-static {
+  opacity: 0;
+  transition: opacity 350ms ease 400ms;
+}
+
+.fade-in-email {
+  opacity: 1;
+}

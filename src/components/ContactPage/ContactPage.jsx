@@ -5,7 +5,7 @@ import { BiMailSend } from 'react-icons/bi'
 import EmailMe from '../EmailMe/EmailMe'
 import React, { useState, useEffect } from 'react'
 
-const ContactPage = () => {
+const ContactPage = ({ isVisible }) => {
   const [email, setEmail] = useState(false);
   const [success, setSuccess] = useState(false);
 
@@ -35,27 +35,30 @@ const ContactPage = () => {
         </div>
 
       </div>
-      <div className={email ? 'expanded' : 'email-me'}>
-        {email ? (
-          <React.Fragment>
-            <EmailMe setEmail={setEmail} setSuccess={setSuccess} />
 
-          </React.Fragment>
-        ) : (
-          <React.Fragment>
-            {success ? (
-              <p>sent! 🎉</p>
-            ) : (
-              <React.Fragment>
-                <BiMailSend onClick={() => setEmail(true)} />
-                <p onClick={() => setEmail(true)}> Email Me</p>
-              </React.Fragment>
-            )}
+      <div className={isVisible ? 'email-static fade-in-email' : 'email-static'}>
+        <div className={email ? 'expanded' : 'email-me'}>
+          {email ? (
+            <React.Fragment>
+              <EmailMe setEmail={setEmail} setSuccess={setSuccess} />
 
-          </React.Fragment>
-        )}
+            </React.Fragment>
+          ) : (
+            <React.Fragment>
+              {success ? (
+                <p>sent! 🎉</p>
+              ) : (
+                <React.Fragment>
+                  <BiMailSend onClick={() => setEmail(true)} />
+                  <p onClick={() => setEmail(true)}> Email Me</p>
+                </React.Fragment>
+              )}
 
+            </React.Fragment>
+          )}
+        </div>
       </div>
+
       <footer className='footer'>© Ben Shekhtman {new Date().getFullYear()}</footer>
     </div>
   )
