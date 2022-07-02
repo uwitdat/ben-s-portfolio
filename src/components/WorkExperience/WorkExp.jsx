@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { FaReact, FaNodeJs } from 'react-icons/fa';
-import { SiJavascript, SiMongodb, SiGraphql, SiTypescript, SiTailwindcss } from 'react-icons/si';
+import { SiJavascript, SiGraphql, SiTypescript, SiTailwindcss } from 'react-icons/si';
 import './WorkExp.css';
 import PYTHON from '../../assets/svgs/python-svgrepo-com.svg';
 import NEXT from '../../assets/svgs/next-js.svg';
 import AWS from '../../assets/svgs/aws.svg';
 import POSTGRES from '../../assets/svgs/pgsql.svg';
+import EXPRESS from '../../assets/svgs/express.svg';
 
 
 const WorkExp = ({ isVisible }) => {
@@ -37,7 +38,7 @@ const WorkExp = ({ isVisible }) => {
               <FaNodeJs style={{ color: 'rgb(131, 254, 147)' }} />
             </div>
             <div>
-              <SiMongodb style={{ color: 'rgb(166, 252, 168)' }} />
+              <img style={svgStyle} src={EXPRESS} alt='' />
             </div>
           </div>
         </div>
