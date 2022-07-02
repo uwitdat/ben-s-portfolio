@@ -16,12 +16,16 @@ nav {
 
 .bubbs {
   transition: all 400ms ease-in;
+  pointer-events: none;
+}
+
+.bubbs-enter {
+  pointer-events: all;
 }
 
 .bubbs a div > p {
   color: rgba(255, 255, 255, 0);
 }
-
 
 .bubbs > svg {
   color: rgba(255, 255, 255, 0);
@@ -51,7 +55,8 @@ nav {
 
 .bubbs-enter:hover {
   opacity: 1;
-  border-left: 1px solid rgba(82, 82, 82, 0.246)
+  border-left: 1px solid rgba(82, 82, 82, 0.246);
+  backdrop-filter: blur(3px);
 }
 
 .bubbs-enter:hover a div > p {
