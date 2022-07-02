@@ -1,16 +1,19 @@
 import './ResumePage.css';
 import { FaDownload } from 'react-icons/fa'
 import Modal from '../Modal/Modal'
+import { useEffect, useState } from 'react';
 
-const ResumePage = ({
-  setIsOpen, isOpen,
-}) => {
+const ResumePage = ({ setIsOpen, isOpen, isVisible }) => {
+  const [anim, setAnim] = useState(false);
 
+  useEffect(() => {
+    if (isVisible) setAnim(true);
+  }, [isVisible])
 
   return (
-    <div className="container-five" id='resume-title'>
+    <div className={anim ? "container-five slide-in-elliptic" : 'container-five'} id='resume-title'>
 
-      <h1 className="title" id="black">Resume & Cerf</h1>
+      <h1 className={anim ? "title res title-fade" : 'title res'} id="black">Resume & Cerf</h1>
 
       <div className="resume-col">
         <p id="top">Download My Resume</p>

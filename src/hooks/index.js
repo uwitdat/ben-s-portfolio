@@ -12,21 +12,14 @@ export const useIntersectionObserver = (options) => {
 
 
   useEffect(() => {
-    let currentEl;
+    const currentEl = containerRef.current;
+    if (!currentEl) return; // no need to attach observer or cleanup
 
     const observer = new IntersectionObserver(callback, options);
-
-    if (containerRef && containerRef.current) {
-      currentEl = containerRef.current;
-      observer.observe(currentEl);
-    }
-
+    observer.observe(currentEl);
     return () => {
-      if (containerRef && containerRef.current) {
-        currentEl = containerRef.current;
-        observer.unobserve(currentEl);
-      }
-    }
+      observer.unobserve(currentEl);
+    };
   }, [containerRef, options])
 
   return [containerRef, isVisible]

@@ -16,8 +16,6 @@ const App = () => {
   const lengthTwo = SliderDataTwo.length;
 
   const [isOpen, setIsOpen] = useState(false)
-  const [isOpenTwo, setIsOpenTwo] = useState(false)
-
   const [current, setCurrent] = useState(0);
   const [currentTwo, setCurrentTwo] = useState(0);
 
@@ -37,11 +35,14 @@ const App = () => {
     setCurrentTwo(currentTwo === 0 ? lengthTwo - 1 : currentTwo - 1);
   };
 
+  const [isMobile] = useState(window.innerWidth <= 350)
+
   const options = {
     root: null,
     rootMargin: '-20px',
-    threshold: 0.3
+    threshold: isMobile ? 0 : 0.3
   }
+
   const [container, isVisible] = useIntersectionObserver(options)
   const [containerTwo, isVisibleTwo] = useIntersectionObserver(options)
   const [containerThree, isVisibleThree] = useIntersectionObserver(options)
@@ -70,8 +71,6 @@ const App = () => {
         <ResumePage
           setIsOpen={setIsOpen}
           isOpen={isOpen}
-          setIsOpenTwo={setIsOpenTwo}
-          isOpenTwo={isOpenTwo}
           isVisible={isVisibleTwo}
         />
       </div>
