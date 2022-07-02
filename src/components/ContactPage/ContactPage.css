@@ -200,10 +200,12 @@
 }
 
 .email-static {
+  pointer-events: none;
   opacity: 0;
   transition: opacity 350ms ease 400ms;
 }
 
 .fade-in-email {
   opacity: 1;
+  pointer-events: all;
 }

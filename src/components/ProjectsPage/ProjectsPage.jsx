@@ -2,7 +2,8 @@ import "./ProjectsPage.css"
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa'
 import { DiGithubBadge } from 'react-icons/di'
 
-const ProjectsPage = ({ nextSlide,
+const ProjectsPage = ({
+  nextSlide,
   nextSlideTwo,
   prevSlide,
   prevSlideTwo,
