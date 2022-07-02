@@ -1,0 +1,96 @@
+
+nav {
+  width: 6rem;
+  position: sticky;
+  top: 0;
+  align-self: flex-end;
+  z-index: 5;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.2rem;
+  /* padding-top: 3rem; */
+}
+
+.bubbs {
+  transition: all 400ms ease-in;
+}
+
+.bubbs a div > p {
+  color: rgba(255, 255, 255, 0);
+}
+
+
+.bubbs > svg {
+  color: rgba(255, 255, 255, 0);
+  font-size: 1.8rem;
+  margin-bottom: .5rem;
+  transition: all 400ms ease-in;
+}
+
+.bubbs .bubble {
+  border: 1px solid rgba(74, 74, 74, 0);
+  background-color: rgba(28, 28, 28, 0);
+}
+
+.bubbs-enter .bubble {
+  border: 1px solid rgba(74, 74, 74, 0.216);
+  background-color: rgba(28, 28, 28, 0.349);
+}
+
+.bubbs-enter > svg {
+  color: rgba(255, 255, 255, 0.436);
+  transition: all 400ms ease-in;
+}
+
+.bubbs-enter a div > p {
+  color: rgba(255, 255, 255, 0.436);
+}
+
+.bubbs-enter:hover {
+  opacity: 1;
+  border-left: 1px solid rgba(82, 82, 82, 0.246)
+}
+
+.bubbs-enter:hover a div > p {
+  color: rgb(255, 255, 255);
+}
+
+.bubbs-enter:hover > svg {
+  color: rgb(255, 255, 255);
+}
+
+.bubble {
+  aspect-ratio: 1;
+  width: 3.6rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin: .5rem 0;
+  backdrop-filter: blur(2px);
+  cursor: pointer;
+  transition: all ease 350ms;
+}
+
+.bubble:hover {
+  transform: scale(1.06);
+}
+
+.bubble p {
+  color: rgb(240, 240, 240);
+  margin: 0;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  transition: all ease 550ms;
+}
+
+.bubble-active {
+  background-color: rgb(255, 255, 255) !important;
+  transform: scale(1.06) !important;
+}
+
+.bubble-active > p {
+  color: red !important;
+}

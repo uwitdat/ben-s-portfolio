@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { SliderData } from "./SliderData"
 import { SliderDataTwo } from "./SliderData"
@@ -10,6 +10,7 @@ import ContactPage from './components/ContactPage/ContactPage';
 import WorkExp from './components/WorkExperience/WorkExp';
 
 import { useIntersectionObserver } from './hooks/index';
+import Nav from './components/Nav/Nav';
 
 const App = () => {
   const length = SliderData.length;
@@ -43,29 +44,43 @@ const App = () => {
     threshold: isMobile ? 0 : 0.3
   }
 
+  const [isNav, setIsNav] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", () =>
+        setIsNav(window.pageYOffset > 180)
+      );
+    }
+  }, []);
+
   const [container, isVisible] = useIntersectionObserver(options)
   const [containerTwo, isVisibleTwo] = useIntersectionObserver(options)
   const [containerThree, isVisibleThree] = useIntersectionObserver(options)
+  const [containerFour, isVisibleFour] = useIntersectionObserver(options)
 
   return (
-    <main>
+    <main className='main'>
+      <Nav isNav={isNav} isVisibleTwo={isVisibleTwo} isVisibleThree={isVisibleThree} isVisibleFour={isVisibleFour} />
       <HomePage />
       <div ref={container}>
         <WorkExp isVisible={isVisible} />
       </div>
 
-      <ProjectsPage
-        nextSlide={nextSlide}
-        prevSlide={prevSlide}
-        nextSlideTwo={nextSlideTwo}
-        prevSlideTwo={prevSlideTwo}
-        current={current}
-        currentTwo={currentTwo}
-        length={length}
-        lengthTwo={lengthTwo}
-        SliderData={SliderData}
-        SliderDataTwo={SliderDataTwo}
-      />
+      <div ref={containerFour}>
+        <ProjectsPage
+          nextSlide={nextSlide}
+          prevSlide={prevSlide}
+          nextSlideTwo={nextSlideTwo}
+          prevSlideTwo={prevSlideTwo}
+          current={current}
+          currentTwo={currentTwo}
+          length={length}
+          lengthTwo={lengthTwo}
+          SliderData={SliderData}
+          SliderDataTwo={SliderDataTwo}
+        />
+      </div>
 
       <div ref={containerTwo}>
         <ResumePage
