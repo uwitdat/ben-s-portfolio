@@ -3,6 +3,7 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import './Nav.css'
 
 const Nav = ({ isNav, isVisibleTwo, isVisibleThree, isVisibleFour }) => {
+
   return (
     <nav className={isNav ? 'bubbs bubbs-enter' : 'bubbs'}>
       <GiHamburgerMenu />

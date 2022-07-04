@@ -11,6 +11,7 @@ import WorkExp from './components/WorkExperience/WorkExp';
 
 import { useIntersectionObserver } from './hooks/index';
 import Nav from './components/Nav/Nav';
+import { useMediaQuery } from 'react-responsive';
 
 const App = () => {
   const length = SliderData.length;
@@ -59,9 +60,15 @@ const App = () => {
   const [containerThree, isVisibleThree] = useIntersectionObserver(options)
   const [containerFour, isVisibleFour] = useIntersectionObserver(options)
 
+  const isMobileScreen = useMediaQuery({ query: `(min-width: 930px)` });
+
   return (
-    <main className='main'>
-      <Nav isNav={isNav} isVisibleTwo={isVisibleTwo} isVisibleThree={isVisibleThree} isVisibleFour={isVisibleFour} />
+    <main className={isMobileScreen ? 'main' : 'main full-screen'}>
+
+      {isMobileScreen ? (
+        <Nav isNav={isNav} isVisibleTwo={isVisibleTwo} isVisibleThree={isVisibleThree} isVisibleFour={isVisibleFour} />
+      ) : null}
+
       <HomePage />
       <div ref={container}>
         <WorkExp isVisible={isVisible} />
