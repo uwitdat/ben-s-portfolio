@@ -87,7 +87,6 @@ const WorkExp = ({ isVisible }) => {
           </div>
         </div>
 
-
       </section>
     </div>
   )
