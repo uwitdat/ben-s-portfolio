@@ -10,7 +10,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3.2rem;
+  padding: 3rem;
   /* padding-top: 3rem; */
 }
 
@@ -23,11 +23,6 @@ nav {
   pointer-events: all;
 }
 
-/* @media only screen and (max-width: 1100px) {
-  .bubbs-enter {
-    display: none;
-  }
-} */
 
 .bubbs a div > p {
   color: rgba(255, 255, 255, 0);
@@ -35,7 +30,7 @@ nav {
 
 .bubbs > svg {
   color: rgba(255, 255, 255, 0);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-bottom: .5rem;
   transition: all 400ms ease-in;
 }
@@ -75,7 +70,7 @@ nav {
 
 .bubble {
   aspect-ratio: 1;
-  width: 3.6rem;
+  width: 3rem;
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -92,7 +87,7 @@ nav {
 .bubble p {
   color: rgb(240, 240, 240);
   margin: 0;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   text-transform: capitalize;
   transition: all ease 550ms;
 }
